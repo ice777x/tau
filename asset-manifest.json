@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tau/static/css/main.e856d12e.css",
+    "main.js": "/tau/static/js/main.cc881801.js",
+    "index.html": "/tau/index.html",
+    "main.e856d12e.css.map": "/tau/static/css/main.e856d12e.css.map",
+    "main.cc881801.js.map": "/tau/static/js/main.cc881801.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e856d12e.css",
+    "static/js/main.cc881801.js"
+  ]
+}
