@@ -11,6 +11,7 @@ import Search from "./Search";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import LyricsDetail from "./LyricsDetail";
+import LyricsPage from "./LyricsPage";
 
 const darkTheme = createTheme({
     palette: {
@@ -37,7 +38,7 @@ root.render(
                     <Route path="/" element={<App />}>
                         <Route index={true} element={<Home />} />
                         <Route path="lyrics/:query" element={<Lyrics />} />
-                        <Route path="lyrics" element={<div>eee</div>} />
+                        <Route path="lyrics" element={<LyricsPage />} />
                         <Route
                             path="lyrics/text/:url"
                             element={<LyricsDetail />}

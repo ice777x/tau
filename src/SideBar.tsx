@@ -7,12 +7,6 @@ import {
     ListItem,
     Divider,
     OutlinedInput,
-    Drawer,
-    Box,
-    CssBaseline,
-    AppBar,
-    Toolbar,
-    Typography,
 } from "@mui/material/";
 import { Home, Lyrics, Info } from "@mui/icons-material";
 

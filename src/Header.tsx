@@ -5,17 +5,9 @@ import {
     Toolbar,
     Button,
     IconButton,
-    OutlinedInput,
     ThemeProvider,
     createTheme,
-    Typography,
-    Drawer,
-    List,
-    ListItem,
-    ListItemButton,
-    ListItemText,
 } from "@mui/material";
-import { Home } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
 const theme = createTheme({
@@ -50,7 +42,7 @@ export default function Header(props: Props) {
                                 Home
                             </Button>
                         </NavLink>
-                        <NavLink to="/lyrics/cakal">
+                        <NavLink to="/lyrics">
                             <Button
                                 sx={{ bgcolor: "#d16c00" }}
                                 variant="contained"
