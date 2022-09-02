@@ -11,14 +11,8 @@ import {
 import { Home, Lyrics, Info } from "@mui/icons-material";
 
 export default function SideBar() {
-    const [value, setValue] = React.useState<string | null>(null);
-    const [data, setData] = React.useState<[] | null>(null);
-    const handleChange = (e: any): any => {
-        setValue(e.target.value);
-    };
     const handleSubmit = (e: any): any => {
-        window.location.href =
-            "http://localhost:3000/lyrics/" + e.target[0].value;
+        window.location.pathname = "/lyrics/" + e.target[0].value;
         e.preventDefault();
     };
     return (
@@ -31,7 +25,6 @@ export default function SideBar() {
                                 autoFocus
                                 placeholder="search"
                                 required
-                                onChange={handleChange}
                                 className="w-full h-12 text-white"
                                 type="search"
                             />
