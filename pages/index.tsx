@@ -143,7 +143,7 @@ const Home: NextPage = () => {
                                 </div>
                             </div>
                             <div className="top-nav block md:hidden mb-4">
-                                <div className="flex flex-row space-x-6 px-[30px] flex-wrap">
+                                <div className="flex flex-row justify-between px-[30px] flex-wrap">
                                     {handleObject.map((el, i) => {
                                         return (
                                             <div
