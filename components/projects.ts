@@ -5,7 +5,7 @@ export interface Projects {
     url: string;
 }
 
-const telegram: [Projects] | [] = [
+const telegram: Projects[] | [] = [
     {
         title: "Tauon",
         description: "A 3rd party Telegram Userbot written in Python",
@@ -14,9 +14,9 @@ const telegram: [Projects] | [] = [
     },
 ];
 
-const javascript: [Projects] | [] = [];
+const javascript: Projects[] | [] = [];
 
-const python: [Projects] | [] = [
+const python: Projects[] | [] = [
     {
         title: "Open-API",
         description: "A simple API for getting information from everywhere",
