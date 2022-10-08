@@ -21,14 +21,14 @@ const Home: NextPage = () => {
     };
     const handleObject = [
         {
-            title: "Python",
-            handle: handlePython,
-            image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-        },
-        {
             title: "Javascript",
             handle: handleJavascript,
             image: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+        },
+        {
+            title: "Python",
+            handle: handlePython,
+            image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
         },
         {
             title: "Telegram",
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
                                     {handleObject.map((el, i) => {
                                         return (
                                             <div
-                                                className="border border-slate-400 rounded-xl min-w-max  flex items-center box-content cursor-pointer hover:bg-indigo-700 hover:scale-105 transition-all ease-in-out duration-300"
+                                                className="border border-slate-400 rounded-xl min-w-max  flex items-center  cursor-pointer hover:bg-indigo-700 hover:scale-105 transition-all ease-in-out duration-300"
                                                 onClick={el.handle}
                                             >
                                                 <div className="px-4 w-full py-2 space-x-4">
@@ -143,11 +143,11 @@ const Home: NextPage = () => {
                                 </div>
                             </div>
                             <div className="top-nav block md:hidden mb-4">
-                                <div className="flex flex-row justify-between px-[30px] flex-wrap">
+                                <div className="flex flex-row gap-4 px-[30px] w-full flex-wrap">
                                     {handleObject.map((el, i) => {
                                         return (
                                             <div
-                                                className="border border-slate-400 rounded-xl min-w-max  flex items-center box-content cursor-pointer hover:bg-indigo-700 hover:scale-105 transition-all ease-in-out duration-300"
+                                                className="border border-slate-400 rounded-xl min-w-max  w-44 flex items-center box-content cursor-pointer hover:bg-indigo-700 hover:scale-105 transition-all ease-in-out duration-300"
                                                 onClick={el.handle}
                                             >
                                                 <div className="px-4 w-full py-2 space-x-4">
